@@ -34,7 +34,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.funthomas424242</groupId>
+                <groupId>com.github.huluvu424242</groupId>
                 <artifactId>plantuml-maven-plugin</artifactId>
                 <version>@project.version@ </version>
                 <configuration>

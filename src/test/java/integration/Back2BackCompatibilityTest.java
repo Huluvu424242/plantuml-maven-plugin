@@ -38,7 +38,8 @@ import static io.takari.maven.testing.TestResources.assertFilesPresent;
 
 // http://takari.io/book/70-testing.html
 @RunWith(MavenJUnitTestRunner.class)
-@MavenVersions({"3.6.3"})
+@MavenVersions({"3.8.4"})
+@Ignore
 public class Back2BackCompatibilityTest {
 
     @Rule
@@ -55,8 +56,8 @@ public class Back2BackCompatibilityTest {
         final File basedir = resources.getBasedir("truncate-project");
         final MavenExecution mavenExecution = maven
                 .forProject(basedir)
-                .withCliOption("-Pfunthomas424242");
-        final MavenExecutionResult result = mavenExecution.execute("clean", "com.github.funthomas424242:plantuml-maven-plugin:generate");
+                .withCliOption("-Phuluvu424242");
+        final MavenExecutionResult result = mavenExecution.execute("clean", "com.github.huluvu424242:plantuml-maven-plugin:generate");
         result.assertErrorFreeLog();
         assertFilesPresent(basedir, "target/plantuml/AblaufManuelleGenerierung.png");
         assertFilesPresent(basedir, "target/plantuml/QueueStatechart.png");
