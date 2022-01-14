@@ -1,0 +1,31 @@
+name: JFrog Deployment
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: setup jdk zulu
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'
+        java-version: '17'
+        server-id: ossrh
+        server-username: MAVEN_USERNAME
+        server-password: MAVEN_PASSWORD
+    - name: Build package
+      run: |
+        ./mvnw clean site install
+        ./mvnw -U -PpruefeVersionen,release clean site install
+    - name: Publish package
+      run: |
+        ./mvnw --batch-mode deploy -Pjfrog
+      env:
+        MAVEN_USERNAME: ${{ secrets.OSSJF_USERNAME }}
+        MAVEN_PASSWORD: ${{ secrets.OSSJF_TOKEN }}
+
+        
+
