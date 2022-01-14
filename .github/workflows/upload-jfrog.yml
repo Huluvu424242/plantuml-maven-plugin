@@ -12,10 +12,11 @@ jobs:
       uses: actions/setup-java@v2
       with:
         distribution: 'zulu'
-        java-version: '17'
+        java-version: '11'
         server-id: jfrog
         server-username: MAVEN_USERNAME
         server-password: MAVEN_PASSWORD
+    - name: deploy to jfrog
       run: |
         ./mvnw clean site install
         ./mvnw -U -PpruefeVersionen,release clean site install
