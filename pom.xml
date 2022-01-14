@@ -341,7 +341,7 @@
         <profile>
             <id>jfrog</id>
             <build>
-                <defaultGoal>deploy -Pjfrog</defaultGoal>
+                <defaultGoal>deploy</defaultGoal>
             </build>
             <distributionManagement>
                 <repository>
