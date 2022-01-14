@@ -13,7 +13,7 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: '17'
-        server-id: ossrh
+        server-id: jfrog
         server-username: MAVEN_USERNAME
         server-password: MAVEN_PASSWORD
     - name: Build package
