@@ -12,7 +12,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         distribution: 'zulu'
-        java-version: '13'
+        java-version: '11'
         server-id: jfrog
         server-username: MAVEN_USERNAME
         server-password: MAVEN_PASSWORD
@@ -20,7 +20,7 @@ jobs:
       run: |
         ./mvnw clean site install
         ./mvnw -U -PpruefeVersionen,release clean site install
-        ./mvnw -Pjfrog
+        ./mvnw -Pjfrog --batch-mode
       env:
         MAVEN_USERNAME: ${{ secrets.OSSJF_USERNAME }}
         MAVEN_PASSWORD: ${{ secrets.OSSJF_TOKEN }}

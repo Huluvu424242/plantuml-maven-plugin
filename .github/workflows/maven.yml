@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         distribution: 'zulu' # See 'Supported distributions' for available options
-        java-version: '13'
+        java-version: '11'
     - name: Build with Maven
       run: |
         ./mvnw clean site install
