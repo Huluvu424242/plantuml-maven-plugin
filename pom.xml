@@ -341,7 +341,7 @@
         <profile>
             <id>jfrog</id>
             <build>
-                <defaultGoal>deploy --batch-mode -Pjfrog</defaultGoal>
+                <defaultGoal>deploy -Pjfrog</defaultGoal>
             </build>
             <distributionManagement>
                 <repository>
