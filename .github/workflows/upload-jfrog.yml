@@ -16,12 +16,9 @@ jobs:
         server-id: jfrog
         server-username: MAVEN_USERNAME
         server-password: MAVEN_PASSWORD
-    - name: Build package
       run: |
         ./mvnw clean site install
         ./mvnw -U -PpruefeVersionen,release clean site install
-    - name: Publish package
-      run: |
         ./mvnw -Pjfrog
       env:
         MAVEN_USERNAME: ${{ secrets.OSSJF_USERNAME }}
