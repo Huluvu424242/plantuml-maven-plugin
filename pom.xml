@@ -339,6 +339,24 @@
 
         </profile>
         <profile>
+            <id>jfrog</id>
+            <build>
+                <defaultGoal>--batch-mode deploy -Pjfrog</defaultGoal>
+            </build>
+            <distributionManagement>
+                <repository>
+                    <id>central</id>
+                    <name>huluvu-releases</name>
+                    <url>https://huluvu.jfrog.io/artifactory/default-maven-local</url>
+                </repository>
+                <snapshotRepository>
+                    <id>snapshots</id>
+                    <name>huluvu-snapshots</name>
+                    <url>https://huluvu.jfrog.io/artifactory/default-maven-local</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+        <profile>
             <id>java8ci</id>
             <properties>
                 <maven.compiler.target>1.8</maven.compiler.target>

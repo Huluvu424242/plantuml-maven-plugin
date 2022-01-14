@@ -22,7 +22,7 @@ jobs:
         ./mvnw -U -PpruefeVersionen,release clean site install
     - name: Publish package
       run: |
-        ./mvnw --batch-mode deploy -Pjfrog
+        ./mvnw -Pjfrog
       env:
         MAVEN_USERNAME: ${{ secrets.OSSJF_USERNAME }}
         MAVEN_PASSWORD: ${{ secrets.OSSJF_TOKEN }}
