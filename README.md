@@ -69,3 +69,20 @@ mvn clean com.github.funthomas424242:plantuml-maven-plugin:generate
 
 
 Released under [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+# Roadmap 
+
+At now there is an [asciidoctor-maven-plugin](https://github.com/asciidoctor/asciidoctor)
+wich comes with an asciidoctor-diagram part to generate documentation + diagrams from text files. 
+This takes input from asciidoc files *.adoc and plantuml files for generation with 
+support many output formats: html, pdf, ... 
+An example for this you can find out under 
+[asciidoctor-diagram-example](https://github.com/asciidoctor/asciidoctor-maven-examples/tree/main/asciidoctor-diagram-example)
+  
+Since there is asciidoctor with out of the box plantuml support, this plantuml-maven-plugin is obsolete and only 
+useful for special cases. I leave the plugin project public, so if you have special cases and you need extra plugin support 
+please send an issue for missing feature or better send an pull request to add the missing feature.
+
+If no special cases will be detect for an long time - i will be change the project status to pulic archive.
+
+\\// Thank you for you support and live long and prosper. :vulcan_salute:
