@@ -85,4 +85,4 @@ please send an issue for missing feature or better send an pull request to add t
 
 If no special cases will be detect for an long time - i will be change the project status to pulic archive.
 
-\\// Thank you for you support and live long and prosper. :vulcan_salute:
+\\\\// Thank you for you support and live long and prosper. :vulcan_salute:
