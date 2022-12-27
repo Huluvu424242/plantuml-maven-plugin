@@ -30,7 +30,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <pluginversion>${it-project.version}</pluginversion>
-        <plantumlversion>1.2020.19</plantumlversion>
+        <plantumlversion>1.2022.14</plantumlversion>
     </properties>
 
     <profiles>

@@ -25,8 +25,8 @@
     </licenses>
     <scm>
         <url>scm:git:https://github.com/Huluvu424242/plantuml-maven-plugin</url>
-        <connection>scm:git:git@github.com:funthomas424242/maven-plantuml-plugin</connection>
-        <developerConnection>scm:git:git@github.com:funthomas424242/plantuml-maven-plugin.git</developerConnection>
+        <connection>scm:git:git@github.com:huluvu424242/maven-plantuml-plugin</connection>
+        <developerConnection>scm:git:git@github.com:huluvu424242/plantuml-maven-plugin.git</developerConnection>
     </scm>
     <issueManagement>
         <system>GitHub</system>
