@@ -3,8 +3,8 @@ name: Deploy Release
 on:
   push:
     branches:
-    - 'release/**'
-    - '!release/**-snapshot'
+      - 'release/**'
+      - '!release/**-snapshot'
 
 jobs:
   deploy:
