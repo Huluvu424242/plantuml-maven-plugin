@@ -2,13 +2,13 @@ name: Deploy Release
 
 on:
   push:
-    branches:    
+    branches:
     - 'release/**'
     - '!release/**-snapshot'
 
 jobs:
   deploy:
-    name: deploy on github
+    name: deploy-github
     runs-on: ubuntu-latest
 
     steps:
