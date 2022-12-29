@@ -5,7 +5,7 @@
 
     <groupId>com.github.funthomas424242</groupId>
     <artifactId>plantuml-maven-plugin</artifactId>
-    <version>1.6.0.test7</version>
+    <version>1.6.0-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>Maven PlantUML plugin</name>
