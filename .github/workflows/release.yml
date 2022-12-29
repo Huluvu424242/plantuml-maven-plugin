@@ -23,6 +23,6 @@ jobs:
         java-package: jdk
         cache: 'maven'
     - name: Deploy to Github Package Registry
-      run: ./mvnw -U -Prelease clean site install deploy
+      run: ./mvnw -U -Prelease deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
