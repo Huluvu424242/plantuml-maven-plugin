@@ -23,9 +23,6 @@ jobs:
         java-package: jdk
         cache: 'maven'
     - name: Deploy to Github Package Registry
+      run: ./mvnw -U -Prelease clean site install deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        mkdir -p ~/.m2
-        echo "<settings><servers><server><id>github</id><username>OWNER</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
-        ./mvnw -U -Prelease site install deploy
