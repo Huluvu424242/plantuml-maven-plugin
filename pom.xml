@@ -33,15 +33,20 @@
         <url>https://github.com/Huluvu424242/plantuml-maven-plugin/issues/new</url>
     </issueManagement>
     <ciManagement>
-        <system>Travis</system>
-        <url>https://travis-ci.org/Huluvu424242/plantuml-maven-plugin</url>
+        <system>github</system>
+        <url>https://github.com/Huluvu424242/plantuml-maven-plugin/actions</url>
     </ciManagement>
     <distributionManagement>
         <repository>
+            <id>ossrh</id>
+            <name>Central Repository OSSRH</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
             <id>github</id>
             <name>GitHub Huluvu424242 Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/Huluvu424242/${project.artifactId}</url>
-        </repository>
+        </snapshotRepository>
     </distributionManagement>
 
     <properties>
