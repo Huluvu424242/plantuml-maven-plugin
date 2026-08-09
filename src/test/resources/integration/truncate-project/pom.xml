@@ -56,7 +56,7 @@
                             <dependency>
                                 <groupId>net.sourceforge.plantuml</groupId>
                                 <artifactId>plantuml</artifactId>
-                                <version>1.2020.19</version>
+                                <version>1.2026.0</version>
                                 <scope>runtime</scope>
                             </dependency>
                         </dependencies>
@@ -96,7 +96,7 @@
                                   ATTENTION: Do not upgrade to a recent version.
                                   This legacy plugin needs an old API and a local GraphViz installation.
                                 -->
-                                <version>7999</version>
+                                <version>1.2026.0</version>
                                 <scope>runtime</scope>
                             </dependency>
                         </dependencies>
@@ -131,7 +131,7 @@
                             <dependency>
                                 <groupId>net.sourceforge.plantuml</groupId>
                                 <artifactId>plantuml</artifactId>
-                                <version>1.2020.19</version>
+                                <version>1.2026.0</version>
                                 <scope>runtime</scope>
                             </dependency>
                         </dependencies>
