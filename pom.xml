@@ -218,7 +218,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-invoker-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.10.1</version>
                 <configuration>
                     <projectsDirectory>src/examples</projectsDirectory>
                     <cloneProjectsTo>${project.build.directory}/test-examples-invoker</cloneProjectsTo>
